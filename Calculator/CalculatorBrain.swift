@@ -8,6 +8,10 @@
 
 import Foundation
 
+func delete(){
+    
+}
+
 class CalculatorBrain{
     
     private var accumulator = 0.0
@@ -27,6 +31,7 @@ class CalculatorBrain{
         "÷" : Operation.BinaryOperation({$0 / $1}),
         "+" : Operation.BinaryOperation({$0 + $1}),
         "−" : Operation.BinaryOperation({$0 - $1}),
+        "^" : Operation.BinaryOperation({pow($0,$1)}),
         "=" : Operation.Equals,
         "AC" : Operation.Constant(0)
 
@@ -42,8 +47,10 @@ class CalculatorBrain{
     func performOperation(symbol: String) {
         if let operation = operations[symbol] {
             switch operation {
-            case .Constant(let value): accumulator = value
-            case .UnaryOperation(let function): accumulator = function(accumulator)
+            case .Constant(let value):
+                accumulator = value
+            case .UnaryOperation(let function):
+                accumulator = function(accumulator)
             case .BinaryOperation(let function):
                 executePendingBinaryOperation()
                 pending = PendingBinaryOperationInfo(binaryFunction: function, fistOperand: accumulator)

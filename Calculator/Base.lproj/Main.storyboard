@@ -58,7 +58,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLb-lg-UxA">
                                                         <color key="backgroundColor" red="0.93691305049999996" green="0.93691305049999996" blue="0.93691305049999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="DEL"/>
+                                                        <state key="normal" title="^"/>
                                                         <connections>
                                                             <action selector="performOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dk6-Kl-5aB"/>
                                                         </connections>
