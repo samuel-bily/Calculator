@@ -83,6 +83,17 @@
 			path = CalculatorUITests;
 			sourceTree = "<group>";
 		};
+		747700131DBA54F9006A62F5 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7477FFE51DBA5386006A62F5 /* AppDelegate.swift */,
+				7477FFEC1DBA5386006A62F5 /* Assets.xcassets */,
+				7477FFEE1DBA5386006A62F5 /* LaunchScreen.storyboard */,
+				7477FFF11DBA5386006A62F5 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
 		7477FFD91DBA5385006A62F5 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +117,9 @@
 		7477FFE41DBA5386006A62F5 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				7477FFE51DBA5386006A62F5 /* AppDelegate.swift */,
 				7477FFE71DBA5386006A62F5 /* ViewController.swift */,
 				7477FFE91DBA5386006A62F5 /* Main.storyboard */,
-				7477FFEC1DBA5386006A62F5 /* Assets.xcassets */,
-				7477FFEE1DBA5386006A62F5 /* LaunchScreen.storyboard */,
-				7477FFF11DBA5386006A62F5 /* Info.plist */,
+				747700131DBA54F9006A62F5 /* Supporting files */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
